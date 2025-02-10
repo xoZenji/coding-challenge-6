@@ -43,3 +43,11 @@ function calculateSubscriptionCost(plan, months, discount = 0) {
 console.log(`Total Cost: $${calculateSubscriptionCost("Basic", 6, 10)}`);
 console.log(`Total Cost: $${calculateSubscriptionCost("Premium", 12, 0)}`);
 // Declared subscriptionCost as an object with different prices based on subscription type. Then has it log everything to the console.
+
+//Task 5: Currency Conversion
+function convertCurrency(amount, exchangeRate) {
+    return (amount * exchangeRate);
+}
+console.log(`Converted Amount: $${convertCurrency(100, 1.1).toFixed(2)}`);
+console.log(`Converted Amount: $${convertCurrency(250, 0.85).toFixed(2)}`);
+// converts the currency and logs it to the console.
