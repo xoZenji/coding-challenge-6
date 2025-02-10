@@ -62,3 +62,17 @@ function applyBulkDiscount(orders, discountFunction) {
 
 console.log(applyBulkDiscount(orders, amount => amount > 500 ? amount * 0.9 : amount));
 // Declared an array of discounted orders and logged them to the console.
+
+//Task 7: Business Expense Tracker
+let tracker = createExpenseTracker();
+function createExpenseTracker() {
+    let totalExpenses = 0;
+    return function(expense) {
+        totalExpenses += expense;
+        return `Total Expenses: $${totalExpenses}`;
+    };
+};
+
+console.log(tracker(200));
+console.log(tracker(150));
+// Created a function that tracks business expenses and logs them to the console.
