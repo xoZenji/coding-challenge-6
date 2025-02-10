@@ -51,3 +51,14 @@ function convertCurrency(amount, exchangeRate) {
 console.log(`Converted Amount: $${convertCurrency(100, 1.1).toFixed(2)}`);
 console.log(`Converted Amount: $${convertCurrency(250, 0.85).toFixed(2)}`);
 // converts the currency and logs it to the console.
+
+//Task 6: Higher Order Function for Bulk Orders.
+let orders = [200, 600, 1200, 450, 800];
+
+
+function applyBulkDiscount(orders, discountFunction) {
+    return orders.map(discountFunction);
+}
+
+console.log(applyBulkDiscount(orders, amount => amount > 500 ? amount * 0.9 : amount));
+// Declared an array of discounted orders and logged them to the console.
