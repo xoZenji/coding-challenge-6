@@ -30,3 +30,16 @@ const calculateBonus = (salary, performanceRating) => {
 console.log(`Excellent Bonus: $${calculateBonus(5000, "Excellent")}`);
 console.log(`Good Bonus: $${calculateBonus(7000, "Good")}`);
 // Declared bonus as an object with different bonuses based on performance. Then has it log everything to the console.
+
+//Task 4: Subscription Pricing Model
+function calculateSubscriptionCost(plan, months, discount = 0) {
+    let subscriptionCost = {
+        "Basic": 10,
+        "Premium": 20,
+        "Enterprise": 50,
+    };
+    return subscriptionCost[plan] * months - discount;
+}
+console.log(`Total Cost: $${calculateSubscriptionCost("Basic", 6, 10)}`);
+console.log(`Total Cost: $${calculateSubscriptionCost("Premium", 12, 0)}`);
+// Declared subscriptionCost as an object with different prices based on subscription type. Then has it log everything to the console.
