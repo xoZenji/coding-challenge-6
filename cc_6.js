@@ -76,3 +76,15 @@ function createExpenseTracker() {
 console.log(tracker(200));
 console.log(tracker(150));
 // Created a function that tracks business expenses and logs them to the console.
+
+//Task 8: Employee Promotion Evaluation
+function calculateYearsToPromotion(employeeLevel) {
+    if (employeeLevel >= 10) {
+        return "Max Level Reached";
+    }
+    return `Years to Level 10: ${(10 - employeeLevel) * 2}`;
+}
+
+console.log(calculateYearsToPromotion(7));
+console.log(calculateYearsToPromotion(5));
+// Created a function the calculates the amount of years left to reach level 10 and logged everything to the console.
