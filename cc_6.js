@@ -17,3 +17,16 @@ function calculateSalesTax(amount, taxRate) {
 console.log(`Sales Tax: $${calculateSalesTax(100, 0.07)}`);
 console.log(`Sales Tax: $${calculateSalesTax(500, 0.1)}`);
 // Logs the tax to the console.
+
+//Task 3: Employee Bonus Calculation
+const calculateBonus = (salary, performanceRating) => {
+    let bonus = {
+        "Excellent": 0.2,
+        "Good": 0.1,
+        "Average": 0.05,
+    };
+    return salary * bonus[performanceRating];
+}
+console.log(`Excellent Bonus: $${calculateBonus(5000, "Excellent")}`);
+console.log(`Good Bonus: $${calculateBonus(7000, "Good")}`);
+// Declared bonus as an object with different bonuses based on performance. Then has it log everything to the console.
